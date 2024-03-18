@@ -1,0 +1,10 @@
+.bg-backpack{
+    background-image: url('../_img/hiking_01.jpg');
+    background-position: center;/*設定圖片在中間*/
+    background-attachment: fixed;/*固定圖片*/
+    background-repeat: no-repeat;
+    line-height: 450px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
