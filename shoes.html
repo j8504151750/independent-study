@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./_css/selfdefined.css">
     <script src="./_js/bootstrap.bundle.js"></script>
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="p-3 mb-3 border-bottom sticky-top bg-light">
@@ -40,14 +42,123 @@
             </div>
         </div>
     </header>
-    <div class="bg-light">
-        <div class="container">
-            <ol class="breadcrumb clearfix">
-                <li class="float-left"><a href="index.html">首頁</a></li>
-                <li class="float-left"><a href="./shoes.html">登山鞋</a></li>                
-            </ol>
-        </div>
+    <!-- breadcrumb -->
+    <div class="bg-light ms-5 mb-4">
+
+        <ol class="breadcrumb clearfix">
+            <li class="float-left"><a href="index.html">首頁</a></li>
+            <li class="float-left"><a href="./shoes.html">登山鞋</a></li>
+        </ol>
+
     </div>
-    
+    <!-- 側邊欄 -->
+    <section>
+        <div class="clearfix">
+            <div class="float-left col-3 position-sticky">
+                <!-- ul.sidebar>li*3>a[href="#"]{item$} -->
+                <ul class="sidebar ms-5">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="#">背包</a></li>
+                    <li><a href="#">登山杖</a></li>
+                    <li><a class="active" href="./shoes.html">登山鞋</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 商品 -->
+    <section>
+        <div class="container d-flex clearfix">
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd01.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            Elixir Active Mid GTX 中筒登山鞋 男 岩綠/碳藍/冰河灰</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd02.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            X Ultra 360 Edge Mid GTX 中筒登山鞋 男 都會灰/苜蓿綠/半透黃</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd03.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            Elixir Active Mid GTX 中筒登山鞋 男 冰河灰/幻灰/龍火橙</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd04.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            X Ultra 360 Edge Mid GTX 中筒登山鞋 男 沙白/藻棕/光譜藍</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd05.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Merrell<br />
+                            Moab 3 Mid GTX 中筒登山健行鞋 男 黑/亮橘</p>
+
+                        <p id="priceText"> $4230</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd06.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Merrell<br />
+                            Moab Speed Mid GTX 中筒健行鞋 男 橘褐</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd07.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            X Ultra 4 GTX 中筒登山鞋 男 觀星藍/黑/緋紅</p>
+
+                        <p id="priceText"> $5420</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd08.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            Quest Rove GTX 高筒登山鞋 男 黑/幻灰/磁灰</p>
+
+                        <p id="priceText"> $5080</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd09.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Salomon<br />
+                            Quest Rove GTX 高筒登山鞋 男 袋鼠褐/藻棕/黑</p>
+
+                        <p id="priceText"> $5080</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd10.jpg" class="img-fluid" alt="">
+                        <p>Mammut<br />
+                            Ducan High GTX 高筒登山鞋 男 黑</p>
+
+                        <p id="priceText"> $7740</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd11.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Merrell<br />
+                            Moab 3 Mid GTX 中筒登山健行鞋 男 岩灰</p>
+
+                        <p id="priceText"> $4230</p>
+                    </div>
+                    <div class="col-3 p-3 ">
+                        <img src="./_img/shoesprd/shoesprd12.jpg" class="img-fluid img-thumbnail" alt="">
+                        <p>Garmont<br />
+                            Pordoi Nubuck GTX 皮革中筒健行鞋 男 橄欖綠</p>
+
+                        <p id="priceText"> $5300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

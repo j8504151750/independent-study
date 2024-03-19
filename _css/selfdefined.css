@@ -77,6 +77,27 @@ video{
     content: "\00a0>\00a0";/*\00a0(特殊字元 空白鍵)*/
 }
 
+/* ================== */
+/* 側邊欖 */
+/* ================ */
+.sidebar{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.sidebar a{
+line-height: 40px;
+text-decoration: none;
+color: black;
+display: block;
+padding-left: 10px;
+border-left: 3px solid white;
+letter-spacing: 0.5px;/*字距*/
+}
+.sidebar a.active{
+    border-left: 3px solid orange;
+}
+
 
 /* 下拉按扭 懸停 */
 .dropdown:hover>.dropdown-menu {
