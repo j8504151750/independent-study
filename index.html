@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登山用品</title>
+    <title>Go Mount</title>
     <link rel="stylesheet" href="./_css/bootstrap.css">
     <link rel="stylesheet" href="./_css/selfdefined.css">
     <script src="./_js/bootstrap.bundle.js"></script>
@@ -27,11 +27,21 @@
                     <img src="./_img/LOGO.png" class="bi me-2" width="70" height="52">
                     </img>
                 </a>
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                        商品分類
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">背包</a></li>
+                        <li><a class="dropdown-item" href="#">登山杖</a></li>
+                        <li><a class="dropdown-item" href="./shoes.html">登山鞋</a></li>
+                    </ul>
+                </div>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">商品分類</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">好康活動</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">關於我們</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">門市資訊</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">購買地點</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -41,18 +51,18 @@
         </div>
     </header>
     <main>
-    <!-- 輪播     -->
-    <section>
+        <!-- 輪播     -->
+        <section>
             <div id="carouse_index" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://placehold.co/600x400" class="d-block " alt="...">
+                        <img src="./_img/carouse/carouse1.jpg" class="d-block " alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/600x400" class="d-block " alt="...">
+                        <img src="./_img/carouse/carouse2.jpg" class="d-block " alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/600x400" class="d-block " alt="...">
+                        <img src="./_img/carouse/carouse3.jpg" class="d-block " alt="...">
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouse_index"
                         data-bs-slide="prev">
@@ -66,41 +76,165 @@
                     </button>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- 最新商品 -->
-    <section>
+        <!-- 最新商品 -->
+        <section>
             <div class="container d-flex">
                 <div class="container">
                     <h1 class="d-flex p-3 text-dark justify-content-center">最新商品</h1>
                     <div class="d-flex flex-wrap">
-                        <div class="col-3 p-3 bg-info">
-                            <img src="https://placehold.co/600x400" class="img-fluid" alt="">
-                            item-a
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/backpackprd/backpack_prd01.jpg" class="img-fluid" alt="">
+                            <p>OSPREY
+                                Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍</p>
+
+                            <p id="priceText">$4500</p>
                         </div>
-                        <div class="col-3 p-3 bg-success">item-b</div>
-                        <div class="col-3 p-3 bg-warning">item-c</div>                        
-                        <div class="col-3 p-3 bg-danger">item-c</div>                        
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd01.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                Elixir Active Mid GTX 中筒登山鞋 男 岩綠/碳藍/冰河灰</p>
+
+                            <p id="priceText">$5420</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd02.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                X Ultra 360 Edge Mid GTX 中筒登山鞋 男 都會灰/苜蓿綠/半透黃</p>
+
+                            <p id="priceText">$5420</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/terkking polesprd/terkking polesprd01.jpg" class="img-fluid" alt="">
+                            <p>Black Diamond
+                                Pursuit 軟木握把鋁合金登山杖 100-140cm 木炭灰/橘紅 (一對)</p>
+
+                            <p id="priceText"> $5100</p>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-    </section>
+        </section>
+        <!-- 背包 -->
+        <section>
+            <div class="bg-backpack">backpack</div>
+            <div class="container d-flex clearfix">
+                <div class="container">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/backpackprd/backpack_prd01.jpg" class="img-fluid" alt="">
+                            <p>OSPREY
+                                Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍</p>
+                            <p id="priceText">$4500</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/backpackprd/backpack_prd02.jpg" class="img-fluid" alt="">
+                            <p>OSPREY
+                                Hikelite 18 輕量網架健行背包 18L 混凝土灰</p>
+                            <p id="priceText">$4500</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/backpackprd/backpack_prd03.jpg" class="img-fluid" alt="">
+                            <p>OSPREY
+                                Hikelite 26 輕量網架健行背包 26L 50週年紀念黑</p>
+                            <p id="priceText">$4950</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/backpackprd/backpack_prd04.jpg" class="img-fluid" alt="">
+                            <p>OSPREY
+                                Hikelite 28 輕量網架健行背包 28L 混凝土灰</p>
+                            <p id="priceText">$5400</p>
+                        </div>
 
-    <section>
-        <div class="bg-backpack">backpack</div>
-        <div class="container d-flex">
-            <div class="container">             
-                <div class="d-flex flex-wrap">
-                    <div class="col-3 p-3 bg-info">
-                        <img src="https://placehold.co/600x400" class="img-fluid" alt="">
-                        item-a
                     </div>
-                    <div class="col-3 p-3 bg-success">item-b</div>
-                    <div class="col-3 p-3 bg-warning">item-c</div>                        
-                    <div class="col-3 p-3 bg-danger">item-c</div>                        
                 </div>
-    </section>
+            </div>
+        </section>
+        <!-- 登山杖 -->
+        <section>
+            <div class="bg-trekking-poles">trekking poles</div>
+            <div class="container d-flex clearfix">
+                <div class="container">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/terkking polesprd/terkking polesprd01.jpg" class="img-fluid" alt="">
+                            <p>Black Diamond
+                                Pursuit 軟木握把鋁合金登山杖 100-140cm 木炭灰/橘紅 (一對)</p>
+
+                            <p id="priceText"> $5100</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/terkking polesprd/terkking polesprd02.jpg" class="img-fluid" alt="">
+                            <p>Black Diamond
+                                Pursuit 軟木握把鋁合金登山杖 100-140cm 木炭灰/泡沫綠 (一對)</p>
+
+                            <p id="priceText"> $5100</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/terkking polesprd/terkking polesprd03.png" class="img-fluid" alt="">
+                            <p>Black Diamond
+                                Pursuit Shock 軟木握把鋁合金避震登山杖 100-140cm 鋼鐵灰/橘紅 (一對)</p>
+
+                            <p id="priceText"> $5300</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/terkking polesprd/terkking polesprd04.jpg" class="img-fluid" alt="">
+                            <p>Black Diamond
+                                Pursuit Shock 軟木握把鋁合金避震登山杖 100-140cm 鋼鐵灰/泡沫綠 (一對)</p>
+
+                            <p id="priceText"> $5300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 鞋子 -->
+        <section>
+            <div class="videoText">
+                <p>Shoes</p>
+            </div>
+            <video src="./_video/shoes_title.mp4" autoplay loop muted></video>
+            <div class="container d-flex clearfix">
+                <div class="container">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd01.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                Elixir Active Mid GTX 中筒登山鞋 男 岩綠/碳藍/冰河灰</p>
+
+                            <p id="priceText"> $5420</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd02.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                X Ultra 360 Edge Mid GTX 中筒登山鞋 男 都會灰/苜蓿綠/半透黃</p>
+
+                            <p id="priceText"> $5420</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd03.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                Elixir Active Mid GTX 中筒登山鞋 男 冰河灰/幻灰/龍火橙</p>
+
+                            <p id="priceText"> $5420</p>
+                        </div>
+                        <div class="col-3 p-3 ">
+                            <img src="./_img/shoesprd/shoesprd04.jpg" class="img-fluid" alt="">
+                            <p>Salomon
+                                X Ultra 360 Edge Mid GTX 中筒登山鞋 男 沙白/藻棕/光譜藍</p>
+
+                            <p id="priceText"> $5420</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
     </main>
@@ -108,8 +242,20 @@
     <footer>
         <div class=" bg-light">
             <div>
-                <p>E-mail : testemail@email.com </p>
-                <p>連絡電話 : 09OO-XXX-OOO </p>
+                <div class="container d-flex">
+                    <div class="col-4">
+                        <img src="./_img/LOGO.png" height="100px" width="100px" alt="">
+                        <br>
+                        <h5>Because it's there</h5>
+                        <h6>因為山就在那裡</h6>
+                    </div>
+                    <div class="col-4">                        
+                        <h5>聯絡我們</h5>
+                        <h6>09XX-00OX-XXOO</h6>
+                    </div>
+
+                </div>
+
 
             </div>
         </div>

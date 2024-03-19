@@ -1,10 +1,89 @@
-.bg-backpack{
+/* 背包標題圖 */
+.bg-backpack {
     background-image: url('../_img/hiking_01.jpg');
-    background-position: center;/*設定圖片在中間*/
-    background-attachment: fixed;/*固定圖片*/
+    background-position: center;
+    /*設定圖片在中間*/
+    background-attachment: fixed;
+    /*固定圖片*/
     background-repeat: no-repeat;
     line-height: 450px;
     color: white;
     font-size: 40px;
     text-align: center;
+}
+/* 登山杖標題圖 */
+.bg-trekking-poles {
+    background-image: url('../_img/trekking polesct.jpeg');
+    background-position: center;
+    /*設定圖片在中間*/
+    background-attachment: fixed;
+    /*固定圖片*/
+    background-repeat: no-repeat;
+    line-height: 450px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+/* 鞋子標題 */
+.bg-shoes {    
+    background-position: center;
+    /*設定圖片在中間*/
+    background-attachment: fixed;
+    /*固定圖片*/
+    background-repeat: no-repeat;
+    line-height: 450px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+/* 影片文字 */
+.videoText{
+    position: relative;
+    
+    top: 220px;
+    left:600px;
+    color: rgb(255, 255, 255);
+    width: 320px;
+    height: 30px;
+    font-size: 40px;
+    text-align: center;
+    z-index:1;
+}
+/* 價格文字 */
+#priceText{
+    color: rgb(66, 66, 249);
+}
+
+/* 麵包屑 */
+.breadcrumb{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+
+}
+.breadcrumb a {
+    color: gray;
+    text-decoration: none;
+}
+/* 兄+弟 相鄰選取器 第一個li不會出現只會出現旁邊的 */
+.breadcrumb>li+li::before{
+    content: "\00a0>\00a0";/*\00a0(特殊字元 空白鍵)*/
+}
+
+
+/* 下拉按扭 懸停 */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
