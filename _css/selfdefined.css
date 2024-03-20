@@ -11,6 +11,7 @@
     font-size: 40px;
     text-align: center;
 }
+
 /* 登山杖標題圖 */
 .bg-trekking-poles {
     background-image: url('../_img/trekking polesct.jpeg');
@@ -24,78 +25,116 @@
     font-size: 40px;
     text-align: center;
 }
-video{
-    top: 0;
-    left: 0;
+
+video {
     width: 100%;
     object-fit: cover;
     height: 450px;
 }
-/* 鞋子標題 */
-.bg-shoes {    
-    background-position: center;
-    /*設定圖片在中間*/
-    background-attachment: fixed;
-    /*固定圖片*/
-    background-repeat: no-repeat;
-    line-height: 450px;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-}
+
 /* 影片文字 */
-.videoText{
-    position: relative;
-    
-    top: 220px;
-    left:600px;
+.videoText {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     width: 320px;
     height: 30px;
     font-size: 40px;
     text-align: center;
-    z-index:1;
+    z-index: 1;
 }
+
 /* 價格文字 */
-#priceText{
+#priceText {
     color: rgb(66, 66, 249);
 }
 
 /* 麵包屑 */
-.breadcrumb{
+.breadcrumb {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
 
 }
+
 .breadcrumb a {
     color: gray;
     text-decoration: none;
 }
+.breadcrumb a:hover {
+    color: #545454; /* 滑鼠移過時的顏色 */
+    cursor: pointer;
+    /* 變換為手指指示器 */
+}
+/* col-3圖片懸停 */
+.col-3 img:hover{
+    box-shadow: 0 0 7px black;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+/* ====================================== */
+/*           表單' */
+/* ================================= */
+
+.label-control{
+    font-weight: 900;
+}
+
+input[type="text"],input[type="email"],input[type="date"],select,textarea{
+    width: 100%;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 20px;/*圓角*/
+}
+input[type="submit"]{
+    padding: 10px;
+    border:none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    width: 200px;
+    cursor: pointer;
+    /* 顯示滑鼠手指形狀 */
+}
+
 /* 兄+弟 相鄰選取器 第一個li不會出現只會出現旁邊的 */
-.breadcrumb>li+li::before{
-    content: "\00a0>\00a0";/*\00a0(特殊字元 空白鍵)*/
+.breadcrumb>li+li::before {
+    content: "\00a0>\00a0";
+    /*\00a0(特殊字元 空白鍵)*/
 }
 
 /* ================== */
 /* 側邊欖 */
 /* ================ */
-.sidebar{
+.sidebar {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-.sidebar a{
-line-height: 40px;
-text-decoration: none;
-color: black;
-display: block;
-padding-left: 10px;
-border-left: 3px solid white;
-letter-spacing: 0.5px;/*字距*/
+
+.sidebar a {
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 10px;
+    border-left: 3px solid white;
+    letter-spacing: 0.5px;
+    /*字距*/
 }
-.sidebar a.active{
-    border-left: 3px solid orange;
+.sidebar a:hover {
+    color: #545454; /* 滑鼠移過時的顏色 */
+    cursor: pointer;
+    /* 變換為手指指示器 */
+}
+
+
+.sidebar a.active {
+    border-left: 3px solid rgb(103, 205, 66);
 }
 
 
@@ -107,4 +146,31 @@ letter-spacing: 0.5px;/*字距*/
 .dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
+}
+
+/* ========= */
+/* ===icon== */
+/* ========= */
+.facebook-icon {
+    color: #4267B2;
+    /* Facebook藍色 */
+    transition: color 0.3s;
+    /* 添加顏色過渡效果 */
+}
+
+.facebook-icon:hover {
+    color: #1877F2;
+    /* 滑鼠懸停時的顏色 */
+    cursor: pointer;
+    /* 變換為手指指示器 */
+}
+.instagram-icon {
+    color:  #c13579; /* 初始顏色 */
+    transition: fill 0.3s; /* 漸變效果 */
+}
+
+.instagram-icon:hover {
+    color: #eb41a2; /* 滑鼠移過時的顏色 */
+    cursor: pointer;
+    /* 變換為手指指示器 */
 }
