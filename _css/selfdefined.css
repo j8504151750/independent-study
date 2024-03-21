@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     line-height: 450px;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     line-height: 450px;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ video {
     color: rgb(255, 255, 255);
     width: 320px;
     height: 30px;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     z-index: 1;
 }
@@ -82,7 +82,7 @@ video {
     font-weight: 900;
 }
 
-input[type="text"],input[type="email"],input[type="date"],select,textarea{
+input[type="text"],input[type="email"],input[type="date"],input[type="password"],select,textarea{
     width: 100%;
     border: 1px solid lightgray;
     margin-bottom: 20px;
@@ -132,7 +132,6 @@ input[type="submit"]{
     /* 變換為手指指示器 */
 }
 
-
 .sidebar a.active {
     border-left: 3px solid rgb(103, 205, 66);
 }
@@ -147,6 +146,17 @@ input[type="submit"]{
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
+
+/* 商品表格margin */
+.specs {
+    margin-top: 20px;
+}
+/* 商品詳細頁面商品圖 */
+.product-img {   
+    max-width: 30%;
+    height: auto;
+}
+
 
 /* ========= */
 /* ===icon== */
@@ -173,4 +183,44 @@ input[type="submit"]{
     color: #eb41a2; /* 滑鼠移過時的顏色 */
     cursor: pointer;
     /* 變換為手指指示器 */
+}
+.power-icon{
+    color:  #357b1b; /* 初始顏色 */
+    padding: 10px;
+    border:none;
+    background-color: rgb(7, 196, 7);
+    color: white;
+    border-radius: 4px;    
+    cursor: pointer;
+}
+.power-icon:hover {
+    color: #235b0e; /* 滑鼠移過時的顏色 */
+    cursor: pointer;
+    background-color: rgb(7, 196, 7);
+    box-shadow: 0 0 5px rgb(0, 71, 14);
+    transition: all 0.3s;
+    /* 變換為手指指示器 */
+}
+.power-icon p {
+    display: flex !important;
+    font-size: 15px;
+}
+.mt-015{
+    margin-top: 0.15rem
+}
+.social-icon{
+    width: 15%;
+}
+.social-icon>a{
+    line-height: 80px;
+    font-size: 30px;
+    color: rgb(23, 146, 56);
+    margin-right: 10px;
+}
+.social-icon>a:hover{
+    line-height: 80px;
+    font-size: 35px;
+    color: rgb(97, 191, 43);
+    margin-right: 10px;
+    transition: 200ms;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聯絡我們</title>
+    <title>登入 GO Mount</title>
     <link rel="stylesheet" href="./_css/bootstrap.css">
     <link rel="stylesheet" href="./_css/selfdefined.css">
     <script src="./_js/bootstrap.bundle.js"></script>
@@ -38,14 +38,13 @@
             </form>
             <a href="./singnIn.html" target="_blank" rel="noopener noreferrer"
                 class="d-flex align-items-center  text-decoration-none">
-                <button class="d-flex power-icon"><svg class="mt-015" xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
-                        <path d="M7.5 1v7h1V1z" />
-                        <path
-                            d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
-                    </svg>
-                    <p class="ms-2 mb-0">登入 Go Mount</p>
-                </button>
+                <button class="d-flex power-icon"><svg class="mt-015" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-power"
+                    viewBox="0 0 16 16">
+                    <path d="M7.5 1v7h1V1z" />
+                    <path
+                        d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                </svg>
+                <p class="ms-2 mb-0">登入 Go Mount</p></button>                
             </a>
         </div>
     </header>
@@ -55,113 +54,43 @@
 
         <ol class="breadcrumb clearfix">
             <li class="float-left"><a target="_blank" href="index.html">首頁</a></li>
-            <li class="float-left"><a target="_blank" href="./Contact.html">聯絡我們</a></li>
+            <li class="float-left"><a target="_blank" href="./Contact.html">登入GO Mount</a></li>
         </ol>
 
     </div>
 
 
     <main>
-        <div class="clearfix container border mb-3">
-            <div class="d-flex justify-content-center">
-                <!-- 表單位置 -->
-                <div class="d-flex col-10 justify-content-center">
-                    <form action="" method="post" enctype="multipart/form-data" autocomplete="off">
-                        <!-- enctype="multipart/form-data 可以上傳所有資料類型 autocomplete="off"關閉自動填入 -->
-                        <!-- 姓名start -->
-                        <label class="label-control" for="name">姓名</label>
-                        <input type="text" name="name" id="name" placeholder="請輸入您的大名" required>
-                        <!-- name是元素會存進資料庫裏面 -->
-                        <br>
-                        <!-- 姓名end -->
-
-                        <!-- 電話start -->
-                        <label class="label-control" for="phone">電話</label>
-                        <input type="text" name="phone" id="phone" placeholder="請輸入您的聯絡電話" required>
-                        <br>
-                        <!-- 電話end -->
-
-                        <!-- 信箱start -->
-                        <label class="label-control" for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="請輸入您的聯絡信箱" required>
-                        <br>
-                        <!-- 信箱end -->
-
-                        <!-- 聯絡目的start -->
-                        <label class="label-control" for="purpose">聯絡目的</label>
-                        <select name="purpose" id="purpose"><!-- select>option*6 -->
-                            <option disabled selected>==請選擇項目==</option>
-                            <option>客服專區</option>
-                            <option>海外專區</option>
-                            <option>加盟專區</option>
-                            <option>異業合作</option>
-                            <option>企業採購</option>
-                            <option>聯名商品</option>
-                        </select>
-                        <br>
-                        <!-- 聯絡目的end -->
-
-
-                        <!-- radio start 單核選 -->
-                        <label class="label-control" for="gender">稱謂</label>
-                        <input type="radio" name="gender" id="male" value="男" checked><label class="label-control"
-                            for="male">先生</label>
-                        <!-- <label class="label-control" for="">變成點字就可以打圈圈，無障礙設計</label> -->
-                        <input type="radio" name="gender" id="female" value="女"><label class="label-control"
-                            for="female">小姐</label>
-                        <br>
-                        <!-- radio end 單核選 -->
-
-
-
-                        <!-- file start -->
-                        <label class="label-control" for="file">上傳附件</label>
-                        <input type="file" name="file" id="file">
-                        <br>
-                        <!-- file end -->
-
-                        <!-- 內容 start -->
-                        <label class="label-control" for="message">聯繫事項</label>
-                        <textarea name="message" id="message" cols="30" rows="15" placeholder="請輸入聯繫內容"></textarea>
-                        <br>
-                        <!-- 內容 end -->
-
-
-
-                        <!-- checkbox start 多核選 -->
-                        <label class="label-control " for="interest">對那些產品有興趣</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="art"><label class="label-control"
-                            for="art">登山鞋</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="sprot"><label class="label-control"
-                            for="sprot">背包</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="program"><label class="label-control"
-                            for="program">登山杖</label>
-                        <br>
-                        <!-- checkbox end 多核選 -->
-
-                        <!-- checkbox start 多核選 -->
-                        <input type="checkbox" name="newsletter" id="newsletter"><label class="label-control"
-                            for="newsletter">您是否同意訂閱電子報</label>
-                        <br>
-                        <!-- checkbox end 多核選 -->
-
-
-                        <!-- value 屬性、值的意思 -->
-                        <!-- input:s -->
-                        <p class="text-right">
-                            <input class="mb-2" type="submit" value="送出表單">
-                        </p>
-
-
-                    </form>
+        <div class="clearfix container-fluid">
+            <div class="container mt-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="text-center mt-2">登入GO Mount</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="username">使用者名稱:</label>
+                                        <input type="text" class="form-control" id="username" name="username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">密碼:</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            required>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn power-icon mt-3">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
+
     </main>
     <footer>
         <div class=" bg-light">

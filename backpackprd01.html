@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登山鞋</title>
+    <title>Hikelite 18 輕量網架健行背包</title>
     <link rel="stylesheet" href="./_css/bootstrap.css">
     <link rel="stylesheet" href="./_css/selfdefined.css">
     <script src="./_js/bootstrap.bundle.js"></script>
+    <script src="./_js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" target="_blank" href="./backpack.html">背包</a></li>
-                    <li><a class="dropdown-item" target="_blank" href="./terking pole.html">登山杖</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="#">登山杖</a></li>
                     <li><a class="dropdown-item" target="_blank" href="./shoes.html">鞋子</a></li>
                 </ul>
             </div>
@@ -51,123 +52,95 @@
 
     <!-- breadcrumb -->
     <div class="bg-light ms-5 mb-4">
+
         <ol class="breadcrumb clearfix">
             <li class="float-left"><a target="_blank" href="index.html">首頁</a></li>
-            <li class="float-left"><a target="_blank" href="./shoes.html">登山鞋</a></li>
+            <li class="float-left"><a target="_blank" href="/backpack.html">背包</a></li>
         </ol>
+
     </div>
+
 
     <main>
         <div class="clearfix container-fluid">
             <div class="row">
                 <!-- 側邊欄 -->
-                <div class="col-md-2 d-none d-lg-block position-sticky" style="height: 100vh;">
+                <div class="d-none d-lg-block col-lg-2 position-sticky" style="height: 100vh;">
                     <ul class="sidebar ms-5">
                         <li><a target="_blank" href="./index.html">首頁</a></li>
-                        <li><a target="_blank" href="./backpack.html">背包</a></li>
+                        <li><a class="active" href="./backpack.html">背包</a></li>
                         <li><a target="_blank" href="./terking pole.html">登山杖</a></li>
-                        <li><a class="active"href="./shoes.html">登山鞋</a></li>
+                        <li><a target="_blank" href="./shoes.html">登山鞋</a></li>
                     </ul>
                 </div>
                 <!-- 商品 -->
-                <div class="col-lg-10 ">
-                    <div class="container-fluid">
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd01.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    Elixir Active Mid GTX 中筒登山鞋 男 岩綠/碳藍/冰河灰</p>
+                <div class="col-lg-10">
+                    <h1>Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍</h1>
+                    <div class="d-flex justify-content-center"><img class="product-img" src="./_img/backpackprd/backpack_prd01.jpg" alt="背包產品01"
+                        class="product-img"></div>
+                    
+                    <br>
+                    <p>
+                        ．Hikelite多功能輕量網架背包，適合單日健行、城市通勤或日常生活使用。</br>
+                        ．使用AirSpeed™框架系統，減輕背部的重量，提升透氣通風背負時的舒適感。</br>
+                        ．附有經過bluesign®認證，不含PFCs活性劑防潑水處理。</br>
+                    </p>
+                    <p id="priceText">$5400</p>
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd02.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    X Ultra 360 Edge Mid GTX 中筒登山鞋 男 都會灰/苜蓿綠/半透黃</p>
+                    <div class="specs">
+                        <h2>商品規格</h2>
+                        <label for="color">顏色:</label>
+                        <select name="color" id="color">
+                            <option value="錦鯉橙">錦鯉橙</option>
+                            <option value="冒險藍">冒險藍</option>
+                        </select>
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd03.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    Elixir Active Mid GTX 中筒登山鞋 男 冰河灰/幻灰/龍火橙</p>
+                        <label for="quantity">數量:</label>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center">                    
+                        <button class="btn-success power-icon mb-3" onclick="addToCart()">加入購物車</button>
+                    </div>
+                </div>
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd04.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    X Ultra 360 Edge Mid GTX 中筒登山鞋 男 沙白/藻棕/光譜藍</p>
+            </div>
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd05.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Merrell<br />
-                                    Moab 3 Mid GTX 中筒登山健行鞋 男 黑/亮橘</p>
+        </div>
 
-                                <p id="priceText"> $4230</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd06.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Merrell<br />
-                                    Moab Speed Mid GTX 中筒健行鞋 男 橘褐</p>
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd07.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    X Ultra 4 GTX 中筒登山鞋 男 觀星藍/黑/緋紅</p>
+    </main>
+    <section>
+        <!-- 購物車 -->
+        <div id="modal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">加入購物車</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImg" class="img-fluid" alt="商品圖片">
+                        <p id="modalProductName"></p>
+                        <p id="modalPrice"></p>
+                        <P id="modalColor"></P>
+                        <p id="modalQuantity"></p>
+                        
 
-                                <p id="priceText"> $5420</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd08.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    Quest Rove GTX 高筒登山鞋 男 黑/幻灰/磁灰</p>
-
-                                <p id="priceText"> $5080</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd09.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Salomon<br />
-                                    Quest Rove GTX 高筒登山鞋 男 袋鼠褐/藻棕/黑</p>
-
-                                <p id="priceText"> $5080</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd10.jpg" class="img-fluid" alt="">
-                                <p>Mammut<br />
-                                    Ducan High GTX 高筒登山鞋 男 黑</p>
-
-                                <p id="priceText"> $7740</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd11.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Merrell<br />
-                                    Moab 3 Mid GTX 中筒登山健行鞋 男 岩灰</p>
-
-                                <p id="priceText"> $4230</p>
-                            </div>
-                            <div class="col-3 p-3 ">
-                                <img src="./_img/shoesprd/shoesprd12.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>Garmont<br />
-                                    Pordoi Nubuck GTX 皮革中筒健行鞋 男 橄欖綠</p>
-
-                                <p id="priceText"> $5300</p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn power-icon" onclick="addToCartConfirmed()">確認加入購物車</button>
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
-    </main>
+    </section>
+
+
     <footer>
         <div class=" bg-light">
             <div>
@@ -211,7 +184,46 @@
             </div>
         </div>
     </footer>
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('modal'), {
+            keyboard: false
+        });
+        function addToCart() {
+            const productName = 'Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍';
+            const productPricePerUnit = 5400; // 每單位價格
+            const productImgSrc = './_img/backpackprd/backpack_prd01.jpg';
+            const selectedColor = document.getElementById('color').value;
+            const selectedQuantity = document.getElementById('quantity').value;
 
+            // 計算總價格
+            const totalPrice = productPricePerUnit * selectedQuantity;
+
+            // 更新購物車提示視窗的內容
+            document.getElementById('modalTitle').textContent = '加入購物車';
+            document.getElementById('modalProductName').textContent = productName;
+            document.getElementById('modalPrice').textContent = '價格: $' + totalPrice; // 更新總價格
+            document.getElementById('modalImg').src = productImgSrc;
+            document.getElementById('modalColor').textContent = '顏色: ' + selectedColor; // 顯示選擇的顏色
+            document.getElementById('modalQuantity').textContent ='數量: ' + selectedQuantity +'個';
+
+            // 顯示購物車提示視窗
+            const modal = new bootstrap.Modal(document.getElementById('modal'));
+            modal.show();
+        }
+
+        // 監聽數量選擇框的變化
+        document.getElementById('quantity').addEventListener('change', function () {
+            const productPricePerUnit = 5400; // 每單位價格
+            const selectedQuantity = this.value;
+
+            // 計算總價格
+            const totalPrice = productPricePerUnit * selectedQuantity;
+
+            // 更新價格顯示
+            document.getElementById('modalPrice').textContent = '價格: $' + totalPrice;
+        });
+
+    </script>
 </body>
 
 </html>

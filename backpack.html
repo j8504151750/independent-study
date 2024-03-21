@@ -30,13 +30,23 @@
                 </ul>
             </div>
             <nav class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <a href="#" class="nav-link px-2 link-dark">好康活動</a>
                 <a href="./Contact.html" class="nav-link px-2 link-dark">聯絡我們</a>
-                <a href="#" class="nav-link px-2 link-dark">門市資訊</a>
+                <a href="./store.html" class="nav-link px-2 link-dark">門市資訊</a>
             </nav>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
             </form>
+            <a href="./singnIn.html" target="_blank" rel="noopener noreferrer"
+                class="d-flex align-items-center  text-decoration-none">
+                <button class="d-flex power-icon"><svg class="mt-015" xmlns="http://www.w3.org/2000/svg" width="17"
+                        height="17" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                        <path d="M7.5 1v7h1V1z" />
+                        <path
+                            d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                    </svg>
+                    <p class="ms-2 mb-0">登入 Go Mount</p>
+                </button>
+            </a>
         </div>
     </header>
 
@@ -55,7 +65,7 @@
         <div class="clearfix container-fluid">
             <div class="row">
                 <!-- 側邊欄 -->
-                <div class="col-2 position-sticky" style="height: 100vh;">
+                <div class="col-md-2 d-none d-lg-block position-sticky" style="height: 100vh;">
                     <ul class="sidebar ms-5">
                         <li><a target="_blank" href="./index.html">首頁</a></li>
                         <li><a class="active" href="./backpack.html">背包</a></li>
@@ -64,14 +74,18 @@
                     </ul>
                 </div>
                 <!-- 商品 -->
-                <div class="col-10 clearfix ">
-                    <div class="container-fluid">
-                        <div class="row">
+                <div class="col-lg-10 ">
+                    <div class="container-fluid " >
+                        <div class="row justify-content-center">
                             <div class="col-3 p-3 ">
-                                <img src="./_img/backpackprd/backpack_prd01.jpg" class="img-fluid img-thumbnail" alt="">
-                                <p>OSPREY<br />
-                                    Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍</p>
-                                <p id="priceText"> $5420</p>
+                                <a target="_blank" href="./backpackprd01.html"
+                                    style="text-decoration: none; color: black;">
+                                    <img src="./_img/backpackprd/backpack_prd01.jpg" class="img-fluid img-thumbnail"
+                                        alt="">
+                                    <p>OSPREY<br />
+                                        Hikelite 18 輕量網架健行背包 18L 錦鯉橙/冒險藍</p>
+                                    <p id="priceText"> $5420</p>
+                                </a>
                             </div>
                             <div class="col-3 p-3 ">
                                 <img src="./_img/backpackprd/backpack_prd02.jpg" class="img-fluid img-thumbnail" alt="">
@@ -139,7 +153,7 @@
                                     Citro 30 多功能網架登山背包 30L 磚石紅</p>
                                 <p id="priceText"> $5380</p>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
