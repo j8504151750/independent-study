@@ -185,7 +185,7 @@ input[type="submit"]{
     /* 變換為手指指示器 */
 }
 .power-icon{
-    color:  #357b1b; /* 初始顏色 */
+    
     padding: 10px;
     border:none;
     background-color: rgb(7, 196, 7);
