@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聯絡我們</title>
+    <title>常見問題</title>
     <link rel="stylesheet" href="./_css/bootstrap.css">
     <link rel="stylesheet" href="./_css/selfdefined.css">
     <script src="./_js/bootstrap.bundle.js"></script>
@@ -56,7 +56,7 @@
 
         <ol class="breadcrumb clearfix">
             <li class="float-left"><a target="_blank" href="index.html">首頁</a></li>
-            <li class="float-left"><a target="_blank" href="./Contact.html">聯絡我們</a></li>
+            <li class="float-left"><a target="_blank" href="./question.html">常見問題</a></li>
         </ol>
 
     </div>
@@ -64,98 +64,32 @@
 
     <main>
         <div class="clearfix container border mb-3">
-            <div class="d-flex justify-content-center">
-                <!-- 表單位置 -->
-                <div class="d-flex col-10 justify-content-center">
-                    <form action="" method="post" enctype="multipart/form-data" autocomplete="off">
-                        <!-- enctype="multipart/form-data 可以上傳所有資料類型 autocomplete="off"關閉自動填入 -->
-                        <!-- 姓名start -->
-                        <label class="label-control" for="name">姓名</label>
-                        <input type="text" name="name" id="name" placeholder="請輸入您的大名" required>
-                        <!-- name是元素會存進資料庫裏面 -->
-                        <br>
-                        <!-- 姓名end -->
-
-                        <!-- 電話start -->
-                        <label class="label-control" for="phone">電話</label>
-                        <input type="text" name="phone" id="phone" placeholder="請輸入您的聯絡電話" required>
-                        <br>
-                        <!-- 電話end -->
-
-                        <!-- 信箱start -->
-                        <label class="label-control" for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="請輸入您的聯絡信箱" required>
-                        <br>
-                        <!-- 信箱end -->
-
-                        <!-- 聯絡目的start -->
-                        <label class="label-control" for="purpose">聯絡目的</label>
-                        <select name="purpose" id="purpose"><!-- select>option*6 -->
-                            <option disabled selected>==請選擇項目==</option>
-                            <option>客服專區</option>
-                            <option>海外專區</option>
-                            <option>加盟專區</option>
-                            <option>異業合作</option>
-                            <option>企業採購</option>
-                            <option>聯名商品</option>
-                        </select>
-                        <br>
-                        <!-- 聯絡目的end -->
-
-
-                        <!-- radio start 單核選 -->
-                        <label class="label-control" for="gender">稱謂</label>
-                        <input type="radio" name="gender" id="male" value="男" checked><label class="label-control"
-                            for="male">先生</label>
-                        <!-- <label class="label-control" for="">變成點字就可以打圈圈，無障礙設計</label> -->
-                        <input type="radio" name="gender" id="female" value="女"><label class="label-control"
-                            for="female">小姐</label>
-                        <br>
-                        <!-- radio end 單核選 -->
-
-
-
-                        <!-- file start -->
-                        <label class="label-control" for="file">上傳附件</label>
-                        <input type="file" name="file" id="file">
-                        <br>
-                        <!-- file end -->
-
-                        <!-- 內容 start -->
-                        <label class="label-control" for="message">聯繫事項</label>
-                        <textarea name="message" id="message" cols="30" rows="15" placeholder="請輸入聯繫內容"></textarea>
-                        <br>
-                        <!-- 內容 end -->
-
-
-
-                        <!-- checkbox start 多核選 -->
-                        <label class="label-control " for="interest">對那些產品有興趣</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="art"><label class="label-control"
-                            for="art">登山鞋</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="sprot"><label class="label-control"
-                            for="sprot">背包</label>
-                        <input class="mb-2" type="checkbox" name="interest[]" id="program"><label class="label-control"
-                            for="program">登山杖</label>
-                        <br>
-                        <!-- checkbox end 多核選 -->
-
-                        <!-- checkbox start 多核選 -->
-                        <input type="checkbox" name="newsletter" id="newsletter"><label class="label-control"
-                            for="newsletter">您是否同意訂閱電子報</label>
-                        <br>
-                        <!-- checkbox end 多核選 -->
-
-
-                        <!-- value 屬性、值的意思 -->
-                        <!-- input:s -->
-                        <p class="text-right">
-                            <input class="mb-2 power-icon" type="submit" value="送出表單">
-                        </p>
-
-
-                    </form>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            問題一：這是真實存在的網頁嗎？
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            並不是，只是一個虛構的網頁。
+                        </div>
+                    </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            問題二：網頁上面的產品是否真實存在呢？
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            是的，請自行尋找購買管道。
+                        </div>
+                    </div>
+                </div>
+                <!-- 其他常見問題依此類推 -->
             </div>
 
 
